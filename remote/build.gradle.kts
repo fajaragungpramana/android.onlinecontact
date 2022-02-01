@@ -2,6 +2,7 @@ plugins {
     id(Plugin.LIBRARY)
     id(Plugin.KOTLIN_ANDROID)
     id(Plugin.KOTLIN_KAPT)
+    id(Plugin.HILT)
 }
 
 android {
@@ -32,6 +33,14 @@ android {
 
 dependencies {
 
+    implementation(Dependencies.DI.HILT)
+    kapt(Dependencies.DI.HILT_COMPILER)
 
+    androidTestImplementation(Dependencies.Test.JUNIT)
+    androidTestImplementation(Dependencies.Test.MOCKITO)
+    androidTestImplementation(Dependencies.Test.MOCKITO_INLINE)
+    androidTestImplementation(Dependencies.Test.MOCKITO_KOTLIN)
+    androidTestImplementation(Dependencies.Test.COROUTINES)
+    androidTestImplementation(Dependencies.Test.ARCH)
 
 }

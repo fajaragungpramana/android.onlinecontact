@@ -2,6 +2,7 @@ plugins {
     id(Plugin.APPLICATION)
     id(Plugin.KOTLIN_ANDROID)
     id(Plugin.KOTLIN_KAPT)
+    id(Plugin.HILT)
 }
 
 android {
@@ -37,5 +38,8 @@ dependencies {
     implementation(project(Module.COMMON))
     implementation(project(Module.REMOTE))
     implementation(project(Module.WIDGET))
+
+    implementation(Dependencies.DI.HILT)
+    kapt(Dependencies.DI.HILT_COMPILER)
 
 }

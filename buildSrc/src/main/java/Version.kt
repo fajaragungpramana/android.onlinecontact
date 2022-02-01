@@ -8,5 +8,6 @@ object Version {
 
     const val GRADLE = "7.1.0"
     const val KOTLIN = "1.6.10"
+    const val HILT = "2.40.5"
 
 }
