@@ -1,5 +1,5 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
 }
 
@@ -7,13 +7,11 @@ android {
     compileSdk 31
 
     defaultConfig {
-        applicationId "com.github.fajaragungpramana.onlinecontact"
         minSdk 21
         targetSdk 31
-        versionCode 1
-        versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
@@ -33,8 +31,6 @@ android {
 
 dependencies {
 
-    implementation project(":common")
-    implementation project(":remote")
-    implementation project(":widget")
+    api 'com.google.android.material:material:1.5.0'
 
 }
