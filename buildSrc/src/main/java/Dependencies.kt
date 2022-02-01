@@ -22,6 +22,12 @@ object Dependencies {
         const val GOOGLE = "com.google.android.material:material:1.5.0"
     }
 
+    object SquareUp {
+        const val RETROFIT = "com.squareup.retrofit2:retrofit:2.9.0"
+        const val GSON = "com.squareup.retrofit2:converter-gson:2.9.0"
+        const val LOGGING = "com.squareup.okhttp3:logging-interceptor:4.9.2"
+    }
+
     object Test {
         const val JUNIT = "junit:junit:4.13.2"
         const val MOCKITO = "org.mockito:mockito-core:4.0.0"

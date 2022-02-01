@@ -36,6 +36,10 @@ dependencies {
     implementation(Dependencies.DI.HILT)
     kapt(Dependencies.DI.HILT_COMPILER)
 
+    implementation(Dependencies.SquareUp.GSON)
+    api(Dependencies.SquareUp.RETROFIT)
+    implementation(Dependencies.SquareUp.LOGGING)
+
     androidTestImplementation(Dependencies.Test.JUNIT)
     androidTestImplementation(Dependencies.Test.MOCKITO)
     androidTestImplementation(Dependencies.Test.MOCKITO_INLINE)
