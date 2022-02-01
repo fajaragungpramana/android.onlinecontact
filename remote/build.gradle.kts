@@ -40,11 +40,11 @@ dependencies {
     api(Dependencies.SquareUp.RETROFIT)
     implementation(Dependencies.SquareUp.LOGGING)
 
-    androidTestImplementation(Dependencies.Test.JUNIT)
-    androidTestImplementation(Dependencies.Test.MOCKITO)
-    androidTestImplementation(Dependencies.Test.MOCKITO_INLINE)
-    androidTestImplementation(Dependencies.Test.MOCKITO_KOTLIN)
-    androidTestImplementation(Dependencies.Test.COROUTINES)
-    androidTestImplementation(Dependencies.Test.ARCH)
+    testImplementation(Dependencies.Test.JUNIT)
+    testImplementation(Dependencies.Test.MOCKITO)
+    testImplementation(Dependencies.Test.MOCKITO_INLINE)
+    testImplementation(Dependencies.Test.MOCKITO_KOTLIN)
+    testImplementation(Dependencies.Test.COROUTINES)
+    testImplementation(Dependencies.Test.ARCH)
 
 }

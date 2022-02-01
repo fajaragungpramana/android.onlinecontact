@@ -2,6 +2,7 @@ package com.github.fajaragungpramana.remote.di
 
 import android.content.Context
 import android.content.SharedPreferences
+import com.github.fajaragungpramana.remote.constant.HttpRouteConstant
 import com.github.fajaragungpramana.remote.constant.RemoteConstant
 import com.github.fajaragungpramana.remote.source.auth.Auth
 import com.github.fajaragungpramana.remote.source.auth.AuthInterceptor
@@ -21,7 +22,7 @@ object RemoteModule {
     @Provides
     fun provideRestClient(okHttpClient: OkHttpClient): Retrofit =
         Retrofit.Builder()
-            .baseUrl(RemoteConstant.LOCAL_GATEWAY)
+            .baseUrl(HttpRouteConstant.LOCAL_GATEWAY)
             .addConverterFactory(GsonConverterFactory.create())
             .client(okHttpClient)
             .build()
